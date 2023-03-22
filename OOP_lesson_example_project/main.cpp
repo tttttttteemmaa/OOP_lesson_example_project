@@ -7,22 +7,32 @@ public:
 	string surname;
 	int age;
 	float avg_mark;
+
+	void init(string name, string sname, int a, float mark) {
+
+		name = name;
+		surname = sname;
+		age = a;
+		avg_mark = mark;
+
+	}
+
+
+	string convert_to_string() {
+		return name + " " + surname + " (age = " + to_string(age) + ") " + "(avg mark: " + to_string(avg_mark) + ") ";
+	}
+
 };
+//
+//void chance_student(Student st) {
+//	st.name = "no name";
+//	st.surname = "no surname";
+//	st.age = 0;
+//	st.avg_mark = 0;
+//
+//
+//}
 
-void chance_student(Student st) {
-	st.name = "no name";
-	st.surname = "no surname";
-	st.age = 0;
-	st.avg_mark = 0;
-
-
-}
-
-
-
-string convert_to_string(Student st) {
-	return " " + st.surname + " (age = " + to_string(st.age) + ") " + "(avg mark: " + to_string(st.avg_mark) + ") ";
-}
 
 
 int main() {
@@ -31,25 +41,13 @@ int main() {
 	Student st2;
 	Student st3;
 
-	st1.name = "Ivan";
-	st1.surname = "Ivanov";
-	st1.age = 14;
-	st1.avg_mark = 10;
-
-	st2.name = "Boba";
-	st2.surname = "babich";
-	st2.age = 14;
-	st2.avg_mark = 10;
-
-	st3.name = "Myha";
-	st3.surname = "Hihamama";
-	st3.age = 14;
-	st3.avg_mark = 10;
-
-	cout << convert_to_string(st1) << endl;
-	cout << convert_to_string(st2) << endl;
-	cout << convert_to_string(st3) << endl;
-
+	st1.init("ivan", "ivanov", 14, 10);
+	st2.init("boba", "Buba", 14, 10);
+	st3.init("Huma", "Homa", 14, 10);
+	
+	cout << st1.convert_to_string() << endl;
+	cout << st2.convert_to_string() << endl;
+	cout << st3.convert_to_string() << endl;
 
 	//Student st2 = st1;
 
