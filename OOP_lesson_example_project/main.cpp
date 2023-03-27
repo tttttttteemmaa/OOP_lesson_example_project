@@ -38,6 +38,10 @@ public:
 
 	}
 
+	~Student() {
+		cout << "called Student destruction" << endl;
+	}
+
 	void init(string name, string sname, int a, float mark) {
 
 		name = name;
