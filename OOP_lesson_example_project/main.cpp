@@ -17,6 +17,15 @@ public:
 		avg_mark = 4;
 	}
 
+	Student(string name, string sname, int a, float mark) {
+		cout << "contruction whit out" << endl;
+		name = name;
+		surname = sname;
+		age = a;
+		avg_mark = mark;
+
+	}
+
 
 
 	void init(string name, string sname, int a, float mark) {
@@ -43,15 +52,16 @@ public:
 
 
 int main() {
-
-	Student st1;
-	Student st2;
-	Student st3;
+	Student st;
+	Student st1("Ivan", "Ivanov", 14, 10);
+	Student st2("Buba", "Hoba", 15, 8);
+	Student st3("Boba", "Huba", 14, 6);
 
 	//st1.init("ivan", "ivanov", 14, 10);
 	//st2.init("boba", "Buba", 14, 13);
 	//st3.init("Huma", "Homa", 14, 5);
 	//
+	cout << st.convert_to_string() << endl;
 	cout << st1.convert_to_string() << endl;
 	cout << st2.convert_to_string() << endl;
 	cout << st3.convert_to_string() << endl;
