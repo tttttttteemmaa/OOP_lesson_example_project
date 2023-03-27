@@ -26,7 +26,17 @@ public:
 
 	}
 
+	Student(string name, string sname) {
+		cout << "contruction whit out" << endl;
+		name = name;
+		surname = sname;
+	}
 
+	Student(float mark) {
+		cout << "contruction whit out" << endl;
+		avg_mark = mark;
+
+	}
 
 	void init(string name, string sname, int a, float mark) {
 
@@ -37,6 +47,13 @@ public:
 
 	}
 
+	void init_default() {
+
+		name = "no name";
+		surname = "no surname";
+		age = 16;
+		avg_mark = 4;
+	}
 
 	string convert_to_string() {
 		return name + " " + surname + " (age = " + to_string(age) + ") " + "(avg mark: " + to_string(avg_mark) + ") ";
@@ -53,8 +70,8 @@ public:
 
 int main() {
 	Student st;
-	Student st1("Ivan", "Ivanov", 14, 10);
-	Student st2("Buba", "Hoba", 15, 8);
+	Student st1(10);
+	Student st2("Buba", "Hoba");
 	Student st3("Boba", "Huba", 14, 6);
 
 	//st1.init("ivan", "ivanov", 14, 10);
@@ -73,6 +90,6 @@ int main() {
 	//st1.avg_mark = 9;
 
 	//cout << st2.name << " " << st2.surname << " (age = " << st2.age << ") " << "(avg mark: " << st2.avg_mark << ") " << endl;
-	
+
 	return 0;
 }
