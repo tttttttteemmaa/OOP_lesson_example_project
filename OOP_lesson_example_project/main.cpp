@@ -8,6 +8,17 @@ public:
 	int age;
 	float avg_mark;
 
+
+	Student() {
+		/*cout << "default construction" << endl;*/
+		name = "no name";
+		surname = "no surname";
+		age = 16;
+		avg_mark = 4;
+	}
+
+
+
 	void init(string name, string sname, int a, float mark) {
 
 		name = name;
@@ -23,20 +34,12 @@ public:
 	}
 
 };
-//
-//void chance_student(Student st) {
-//	st.name = "no name";
-//	st.surname = "no surname";
-//	st.age = 0;
-//	st.avg_mark = 0;
-//
-//
-//}
 
-Student get_best_student(Student st1, Student st2, Student st3) {
-	
-	return st1.avg_mark > st2.avg_mark && st1.avg_mark > st3.avg_mark ? st1 : st2.avg_mark > st3.avg_mark ? st2 : st3;
-}
+//
+//Student get_best_student(Student st1, Student st2, Student st3) {
+//	
+//	return st1.avg_mark > st2.avg_mark && st1.avg_mark > st3.avg_mark ? st1 : st2.avg_mark > st3.avg_mark ? st2 : st3;
+//}
 
 
 int main() {
@@ -45,15 +48,15 @@ int main() {
 	Student st2;
 	Student st3;
 
-	st1.init("ivan", "ivanov", 14, 10);
-	st2.init("boba", "Buba", 14, 13);
-	st3.init("Huma", "Homa", 14, 5);
-	
+	//st1.init("ivan", "ivanov", 14, 10);
+	//st2.init("boba", "Buba", 14, 13);
+	//st3.init("Huma", "Homa", 14, 5);
+	//
 	cout << st1.convert_to_string() << endl;
 	cout << st2.convert_to_string() << endl;
 	cout << st3.convert_to_string() << endl;
 
-	cout << "Best student: " << get_best_student(st1, st2, st3).convert_to_string() << endl;
+	//cout << "Best student: " << get_best_student(st1, st2, st3).convert_to_string() << endl;
 
 	//Student st2 = st1;
 
