@@ -2,6 +2,7 @@
 
 #include "main.h"
 
+
 class Student {
 private:
 	string name;
