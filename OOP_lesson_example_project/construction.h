@@ -30,11 +30,11 @@ public:
 	}
 
 
-	const int Max_mark = 11;
+	const int Max_mark = 10;
 	const int Min_mark = 0;
 
 	void set_avg_mark(float avg) {
-		if (avg >= Min_mark && avg < Max_mark)
+		if (avg >= Min_mark && avg <= Max_mark)
 		{
 			avg_mark = avg;
 		}
