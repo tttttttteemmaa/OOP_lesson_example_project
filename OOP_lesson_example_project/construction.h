@@ -3,11 +3,64 @@
 #include "main.h"
 
 class Student {
-public:
+private:
 	string name;
 	string surname;
 	int age;
 	float avg_mark;
+
+public:
+
+	int get_age() {
+		return age;
+	}
+
+	const int Max_age = 160;
+	const int Min_age = 0;
+
+	void set_age(int a) {
+		if (a > Max_age && a < Min_age)
+		{
+			age = a;
+		}
+	}
+
+	float get_avg_mark() {
+		return avg_mark;
+	}
+
+
+	const int Max_mark = 11;
+	const int Min_mark = 0;
+
+	void set_avg_mark(float avg) {
+		if (avg >= Min_mark && avg < Max_mark)
+		{
+			avg_mark = avg;
+		}
+	}
+
+	string get_name() {
+		return name;
+	}
+
+	void set_name(string n){
+		name = n;
+	}
+
+
+	string get_surname() {
+		return surname;
+	}
+
+	void set_surname(string sn) {
+		surname = sn;
+		}
+
+
+
+
+
 
 
 	Student() {
