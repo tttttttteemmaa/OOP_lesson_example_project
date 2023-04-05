@@ -11,7 +11,7 @@ private:
 		{
 			avg += list[i].get_avg_mark();
 		}
-		return avg /= size;
+		return avg / size;
 	}
 
 
