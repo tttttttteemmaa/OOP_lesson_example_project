@@ -129,10 +129,10 @@
   <ItemGroup>
     <ClCompile Include="construction.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="construction.h" />
+    <ClInclude Include="group.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="manaager.h" />
   </ItemGroup>

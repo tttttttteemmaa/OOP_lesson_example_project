@@ -1,10 +1,11 @@
 #include "main.h"
-
-#define DEFAULT_SIZE = 10;
 #include "construction.h"
+
+#define DEFAULT_SIZE 10
 
 class Group {
 private:
+	
 	Student list[DEFAULT_SIZE];
 	int size;
 	string name;
@@ -16,11 +17,19 @@ public:
 	Group(string nm);
 	~Group();
 	
-	void add(Student student);
+	string get_name() {
+		return name;
+	}
+
+	void set_name(string n) {
+		name = n;
+	}
+
+	bool add(Student student);
 	void remove(Student student);
 	void remove(int index);
 	Student get(int index);
-	int size(int index);
+	int get_size(int index);
 	string convert_to_string();
 
 };
